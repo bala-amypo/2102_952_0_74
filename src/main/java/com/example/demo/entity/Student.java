@@ -1,7 +1,12 @@
 package com.example.demo.entity;
 
+import java.time.*;
+
 public class Student{
     private Long id;
     private String name;
-    pr
+    private String dept;
+    private LocalDate dob;
+    private float cgpa;
+    
 }
