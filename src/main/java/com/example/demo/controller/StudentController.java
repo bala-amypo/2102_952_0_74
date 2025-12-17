@@ -1,4 +1,5 @@
 package com.example.demo.controller;
+import java.util.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.example.demo.entity.Student;
@@ -10,5 +11,9 @@ public class StudentController {
     @PostMapping("/addStudent")
     public Student addStudent(@RequestBody Student st){
         return stdser.postStudent(st);
+    }
+    @GetMapping("/getAllStudents")
+    public List<Student> getAllStudents() {
+        return stdser.getAllStudents();
     }
 }

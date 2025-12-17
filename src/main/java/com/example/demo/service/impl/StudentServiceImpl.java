@@ -1,4 +1,5 @@
 package com.example.demo.service.impl;
+import java.util.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.demo.entity.Student;
@@ -12,7 +13,8 @@ public class StudentServiceImpl implements StudentService {
     public Student postStudent(Student st){
         return stdrepo.save(st);
     }
-    public Student GetAllStudent(Student st){
-        return stdrepo.
+    @Override
+    public List<Student> getAllStudents() {
+        return stdrepo.findAll();
     }
 }
