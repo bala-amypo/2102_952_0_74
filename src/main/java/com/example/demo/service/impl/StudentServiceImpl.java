@@ -12,4 +12,7 @@ public class StudentServiceImpl implements StudentService {
     public Student postStudent(Student st){
         return stdrepo.save(st);
     }
+    public Student GetAllStudent(Student st){
+        return stdrepo.
+    }
 }
