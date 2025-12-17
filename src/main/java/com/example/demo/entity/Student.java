@@ -5,8 +5,8 @@ import java.time.*;
 import jakarta.persistence.*;
 @Entity
 public class Student{
-    @Id
-    @GeneratedValue
+    @Id //PRIMARY ID DECLARE PANNA
+    @GeneratedValue(strategy=GenerationType.IDENTITY) //TO AUTO GENERATE THE PRIMARY KEY
     private Long id;
     private String name;
     private String dept;
