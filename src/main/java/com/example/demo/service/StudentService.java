@@ -8,4 +8,5 @@ public interface StudentService{
     Optional<Student> getById(Long id);
     Student UpdateStudent(Long id,Student st);
     String updateData(Long id ,Student st);
+    String deleteData(Long id);
 }
