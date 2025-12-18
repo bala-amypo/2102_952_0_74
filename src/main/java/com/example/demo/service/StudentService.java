@@ -7,5 +7,5 @@ public interface StudentService{
     List<Student> getAllStudents();
     Optional<Student> getById(Long id);
     Student UpdateStudent(Long id,Student st);
-    
+    String updateData(Long id ,Student st);
 }

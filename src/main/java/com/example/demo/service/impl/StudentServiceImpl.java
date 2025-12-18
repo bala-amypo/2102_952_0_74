@@ -25,6 +25,10 @@ public class StudentServiceImpl implements StudentService {
     public Student UpdateStudent(Long id, Student st) {
         st.setId(id);
         return stdrepo.save(st);
-}
+    }
+    @Override
+    public String updateData(Long id,Student st){
+        
+    }
 
 }
