@@ -22,6 +22,6 @@ public class StudentController {
     }
     @PutMapping("/{id}")
     public Student UpdateStudent(@PathVariable Long id, @RequestBody Student st) {
-        return service.UpdateStudent(id, st);
+        return stdser.UpdateStudent(id, st);
     }
 }

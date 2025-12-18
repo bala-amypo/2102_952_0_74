@@ -6,5 +6,6 @@ public interface StudentService{
     Student postStudent(Student st);
     List<Student> getAllStudents();
     Optional<Student> getById(Long id);
-    Student UpdateStudent(Long id,Student st)
+    Student UpdateStudent(Long id,Student st);
+    
 }
