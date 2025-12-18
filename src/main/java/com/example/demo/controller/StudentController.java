@@ -20,4 +20,8 @@ public class StudentController {
     public Optional<Student> getId(@PathVariable Long id){
         return stdser.getById(id);
     }
+    @PutMapping("/{id}")
+    public Student UpdateStudent(@PathVariable Long id, @RequestBody Student st) {
+        return service.UpdateStudent(id, st);
+    }
 }
