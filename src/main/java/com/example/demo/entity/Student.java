@@ -9,6 +9,7 @@ public class Student{
     //PRIMARY ID DECLARE PANNA
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     //TO AUTO GENERATE THE PRIMARY KEY
+    @NotNull
     private Long id;
     private String name;
     private String dept;
