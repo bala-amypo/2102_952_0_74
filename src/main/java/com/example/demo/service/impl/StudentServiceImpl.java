@@ -34,7 +34,9 @@ public class StudentServiceImpl implements StudentService {
             stdrepo.save(st);
             return "Student updated uccessfully";
         }
-        else
+        else{
+            return "Student with Id "+id+" NOT FOUND";
+        }
     }
 
 }
