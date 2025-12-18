@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class Student{
     @Id
     //PRIMARY ID DECLARE PANNA
-    @GeneratedValue(strategy+=GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     //TO AUTO GENERATE THE PRIMARY KEY
     private Long id;
     private String name;
